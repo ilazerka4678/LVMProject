@@ -5,5 +5,8 @@ public class physicalVolume extends LVM{
         super(n);
         associatedDrive = drive;
     }
+    public hardDrive getAssociatedDrive(){
+        return associatedDrive;
+    }
 
 }

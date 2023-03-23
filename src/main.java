@@ -6,5 +6,6 @@ public class main {
         hardDrive sdb = new hardDrive("sdb", 200);
         control.addHardDrive(sdb);
         System.out.println(control.listDrives());
+
     }
 }
