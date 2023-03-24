@@ -19,6 +19,24 @@ public class LVM {
     public String getName(){
         return name;
     }
+    public ArrayList<hardDrive> getDriveList(){
+        return driveList;
+    }
+    public ArrayList<physicalVolume> getPhysVolList(){
+        return physVolList;
+    }
+    public int findDriveIndex(String driveName){
+        int i = 0;
+        String compareName = driveList.get(0).getName();
+        while (i < driveList.size() && !(driveName.equals(compareName))){
+            compareName = driveList.get(i).getName();
+            i++;
+        }
+        if (driveName.equals(compareName)){
+            return i;
+        }
+        return -1;
+    }
     public boolean addHardDrive(hardDrive drive){
         for (int i = 0; i < driveList.size(); i++){
             if (driveList.get(i).getName().equals(drive.getName())){

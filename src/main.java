@@ -17,6 +17,19 @@ public class main {
             if (parameters[0].equals("list-drives")){
                 System.out.println(control.listDrives());
             }
+            if (parameters[0].equals("pvcreate")){
+                if (control.findDriveIndex(parameters[2])==-1){
+                    System.out.println("Hard drive doesn't exist.");
+                }
+                if ()
+                else{
+                    physicalVolume volume = new physicalVolume(control.getDriveList().get(control.findDriveIndex(parameters[2])),parameters[1]);
+                    control.addPhysicalVolume(volume);
+                }
+            }
+            if (parameters[0].equals("pvlist")){
+               System.out.println(control.getPhysVolList());
+            }
         }
     }
 }
