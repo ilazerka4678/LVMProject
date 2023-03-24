@@ -51,7 +51,7 @@ public class LVM {
     public String listDrives(){
         String output = "";
         for (int i = 0; i < driveList.size(); i++){
-            output+= driveList.get(i).getName() + " [" + driveList.get(i).getSize() + "GB] [" + driveList.get(i).getUuid() + "]\n"  ;
+            output+= driveList.get(i).getName() + " [" + driveList.get(i).getSize() + "] [" + driveList.get(i).getUuid() + "]\n"  ;
         }
         return output;
     }

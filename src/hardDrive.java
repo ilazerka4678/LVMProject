@@ -1,14 +1,12 @@
 
 public class hardDrive extends LVM{
-    private int size;
-    private String sizeString;
+    private String size;
 
-    public hardDrive(String n, int s, String size){
+    public hardDrive(String n, String size){
         super(n);
-        this.size = s;
-        sizeString = this.size + size;
+        this.size = size;
     }
-    public int getSize(){
+    public String getSize(){
         return size;
     }
 
